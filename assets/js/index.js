@@ -9,7 +9,7 @@ function getUserInfo() {
         success: (res) => {
             if(res.status !==0) return layer.msg(res.message);
             layer.msg("获取用户信息成功")
-            console.log(res);
+            // console.log(res);
             renderAvatar(res.data)
         },
         // 不论成功还是失败，最终都会调用 complete 回调函数
